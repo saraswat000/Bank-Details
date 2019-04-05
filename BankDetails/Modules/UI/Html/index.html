@@ -1,0 +1,38 @@
+﻿<html >
+<head>
+    <title></title>
+	
+    <script src="../../../Library/JS/jquery-3.3.1.js"></script>
+    <script src="../JS/index.js"></script>
+     <link href="../CSS/index.css" rel="stylesheet" />
+
+    
+</head>
+<body class="bg">
+    <div id="ContentDiv">
+        <h1 id="MainHeader">BANK DETAILS</h1>
+        <div id="IFSCDiv">
+            <input type="text" placeholder="Enter your IFSC code" id="IFSCCode" />
+            <input type="button" value="Submit" id="SubmitDiv" />
+        </div>
+            <div id="ErrorDiv" style="display:none;">
+                <strong>Warning!</strong> IFSC Code cannot be empty.
+            </div>
+        <div id="DetailsDiv" style="display:none;">
+            <table id="Table" class="border" style="width:100%">
+                <tr class="border">
+                    <th class="border headers">BANK</th>
+                    <th class="border headers">IFSC</th>
+                    <th class="border headers">BRANCH</th>
+                    <th class="border headers" style="width:20%;">ADDRESS</th>
+                    <th class="border headers">CONTACT</th>
+                    <th class="border headers">CITY</th>
+                    <th class="border headers">RTGS</th>
+                </tr>
+            </table>
+            <input type="button" value="Close" id="CloseDiv" style="display:none;"/>
+        </div>
+    </div>
+    <div id="FooterDiv">Made With Love By Vishwanath Sharma</div>
+</body>
+</html>
